@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="Medill, Journalism, Interactive Storytelling, Megan Munce, Northwestern University Journalism 320">
+  <meta name="description" content="Medill Journalism 320 Midterm">
+  <meta name="author" content="Megan Munce">
+  <meta http-equiv="refresh" content="100">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Journalism 320 Midterm</title>
+
+
+
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+
+  $( function() {
+      $( "#accordion" ).accordion({
+        collapsible: true
+      });
+    } );
+
+    $( function() {
+    $( "#tabs" ).tabs({
+      collapsible: true
+    });
+  } );
+
+  </script>
+
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    width:1200px;
+    background-color: #E4E0EE;
+}
+
+header {
+    background-color:#401F68;
+    color:#ffffff;
+    text-align:center;
+    padding:5px;
+}
+
+/* START HORIZONTAL MENU*/
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #B6ACD1;
+    color: #401F68;
+}
+
+li {
+    float: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+li a {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #000000;
+}
+
+article {
+    width:1100px;
+    float:left;
+    padding:10px;
+}
+footer {
+    background-color:#401F68;
+    color:#FFFFFF;
+    clear:both;
+    text-align:center;
+    padding:5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.photo {
+    font-size: 10px;
+    float: right;
+    padding: 8px;
+    margin: 10px;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: double 5px #401F68;
+}
+
+figcaption {
+  width: 514px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.pullquote {
+    border: none;
+    float:left;
+    margin-left: none;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: left;
+    padding: 15px;
+    width: 250px;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    border: double 5px #401F68;
+}
+
+a {
+  color: #401F68;
+  font-family: 'Roboto', sans-serif;
+}
+
+aside a {
+  color: #FFFFFF;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-size: 18px;
+  text-align: right;
+  font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+  font-size: 18px;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+#info {
+
+  width:300px;
+  float:left;
+  padding-right: 10px;
+
+}
+
+#accords {
+width: 1200px;
+float:none;
+margin-top: 20px;
+font-family: 'Roboto', sans-serif;
+}
+
+#dataviz {
+  margin: 15px;
+  border: double 5px #401F68;
+  background-color: #FFFFFF;
+  padding: 5px;
+}
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+<div id="container">
+
+<header>
+<h1>Medill News 847</h1>
+</header>
+
+<ul style="border-bottom: double 5px #401F68;">
+  <li><a class="active" href="https://www.chicagotribune.com/" target="new">Home</a></li>
+  <li><a href="https://www.chicagotribune.com/news/breaking/" target="new">News</a></li>
+  <li><a href="mailto:meganmunce2022@u.northwestern.edu">Contact</a></li>
+  <li><a href="https://www.linkedin.com/in/meganmunce/" target="new">About</a></li>
+</ul>
+
+<article>
+
+<div class="photo">
+<img src="bean.jpg" alt="A photo of Cloud Gate in downtown Chicago" style="height: 258px; width: 514px; margin: 10px;">
+<figcaption>
+  Cloud Gate in downtown Chicago, colloquially known as "The Bean."
+  <br>
+  <em><a href="https://www.flickr.com/photos/43355249@N00/34789346695" target="new">Source: Pedro Szekely</a></em>
+</figcaption>
+</div>
+
+<h1>Chicago experiences unprecedented rise in carjackings</h1>
+
+<p>
+  <a href="https://www.chicagotribune.com/chi-jeremy-gorner-staff.html" target="new">Jeremy Gorner</a> and
+  <a href="https://www.chicagotribune.com/ct-graphics-editor-20160222-staff.html" target="new">Jonothan Berlin</a>
+</p>
+
+<h3><strong><em style="font-size:20px;">CHICAGO, JAN. 18, 2021, 5:41 p.m. ---</em></strong><br></h3>
+
+<p><strong><em>Editor's note:</strong> Police across several communities in the Chicago area <a href="https://www.chicagotribune.com/news/breaking/ct-carjacking-cases-in-suburbs-20210118-x3gthgyhkbbgjcp6xxpfygvsky-story.html" target="new">reported multiple carjackings over the weekend</a>, continuing a spate of such crimes. Our report from last week, below, took a deeper look at the spike in carjackings in 2020 and into the new year, and how authorities are trying to respond.
+</em></p>
+
+<p>
+  In a year when Chicago struggled with violent crime, an analysis of police data shows 2020 came to a close with carjackings more than doubling in the city over the prior 12 months to a total unseen in nearly two decades.
+</p>
+
+<p>
+  Carjackings rose about 135 percent, to 1,415 in 2020 from 603 in 2019, according to the Tribune review of police information. The 2020 tally was the highest figure recorded here since 2001, when Chicago logged only slightly more with 1,422, the city statistics show.
+</p>
+
+<p>
+  The spike came at a time when gun violence also skyrocketed as the city struggled with the COVID-19 pandemic and experienced unrest following the Memorial Day death of George Floyd at the hands of police in Minnesota. Experts have said both likely influenced crime totals here as the economy suffered and community trust in the police was severely eroded.
+</p>
+
+<div class="flourish-embed flourish-chart" id="dataviz" data-src="visualisation/5300340" style="float: left; width: 425px;"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+<p>
+  There are also likely a variety of reasons for the dramatic rise specifically in carjackings, police have said, including the general public’s use of masks for coronavirus protection, enabling criminals to conceal their faces without raising alarm. Gangs are often to blame, police said, because they sometimes use stolen vehicles as they commit more crimes.
+</p>
+
+<p>
+  <q>The gangs are using these vehicles because they feel they can’t be traced,</q> said South Chicago District Capt. Michael Murphy, whose patrol district saw carjackings jump in 2020 to 97 from 36 the year before. <q>They can do their crimes, whether it be shootings or whatever it is, and then dump the car.</q>
+</p>
+
+<p>
+  And there may have been more carjackings in 2020 than the city’s figures show. For instance, retired Chicago Fire Department Lt. Dwain Williams was shot and killed in early December when assailants tried to carjack him near a popcorn shop on the Southwest Side, authorities said, an incident categorized as a homicide instead of a carjacking. Later in the month, 33-year-old Shuai Guan was fatally shot near his home in the Bridgeport neighborhood after a carjacker demanded the key to his white SUV, a crime also logged as a homicide.
+</p>
+
+<p>
+  The patrol districts with the most carjackings in 2020 were on Chicago’s South and West sides, areas of the city challenged the most by high crime and in need of more social services.
+</p>
+
+<p>
+  The West Side’s Harrison District, which encompasses such communities as East and West Garfield Park, ended the year with 185 carjackings, a 134 percent jump over 2019 when 79 were recorded, statistics show. In the Gresham District, which includes such South Side areas as Auburn Gresham and Chatham, carjackings were up from 43 to 109, a 153 percent increase, according to the statistics.
+  <p>
+
+<h2 style="text-align: left;">You can avoid a carjacking by taking steps to protect yourself. Learn more from Chicago Police Supt. David Brown:</h2>
+
+    <div id="tabs" style="border: double 5px #401F68;">
+  <ul>
+    <li><a href="#tabs-1" style="background-color: #401F68; color: #FFFFFF;">Stay aware of your surroundings</a></li>
+    <li><a href="#tabs-2" style="background-color: #401F68; color: #FFFFFF;">Look for out for groups of two or four</a></li>
+    <li><a href="#tabs-3" style="background-color: #401F68; color: #FFFFFF;">Don't travel alone</a></li>
+    <li><a href="#tabs-4" style="background-color: #401F68; color: #FFFFFF;">Report suspicious behavior</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>Stay aware of your surroundings at all time to avoid falling victim to a carjacking. Before you begin walking back to your car, scan the area for suspicious behavior. Brown stressed the importance of maintaining vigilance in all situations, as carjackings often happen in the suburbs as well as the city.</p>
+  </div>
+  <div id="tabs-2">
+    <p>Brown said car jackers mostly travel in pairs of groups of four to look for potential victims. Most offenders are between the ages of 15 and 20, and they also typically travel in cars, he said to <a href="https://www.nbcchicago.com/news/local/cpd-gives-tips-on-what-to-do-if-you-are-being-carjacked-and-how-to-prevent-it/2420850/" target="new">NBC Chicago.</a></p>
+  </div>
+  <div id="tabs-3">
+    <p>According to Brown, traveling with a companion in the passenger seat is best, when possible. Traveling with a companion can dissuade potential carjackers and make sure you have more eyes looking out for suspicious behavior.</p>
+  </div>
+  <div id="tabs-4">
+    <p>If you see a person or group you think is acting suspicious, call 911 instead of confronting them on your own. Many carjackers are equipped with weapons and may become violent if confronted.</p>
+    <p><q>You got to call 911 and say there was a suspicious car behind my car, instead of walking up and having an armed confrontation,</q> Brown told <a href="https://www.nbcchicago.com/news/local/cpd-gives-tips-on-what-to-do-if-you-are-being-carjacked-and-how-to-prevent-it/2420850/" target="new">NBC Chicago.</a></p>
+  </div>
+</div>
+<p><em>Source: <a href="https://www.nbcchicago.com/news/local/cpd-gives-tips-on-what-to-do-if-you-are-being-carjacked-and-how-to-prevent-it/2420850/" target="new">NBC Chicago</a></em></p>
+
+<p>
+  But the increase was seen across the city. In the North Side’s Town Hall District, which covers Wrigleyville, Lakeview and parts of Lincoln Park, carjackings more than tripled, going from 11 in 2019 to 39 last year, according to the statistics. And the crime more than doubled in the Shakespeare District, home to Logan Square, Wicker Park and Bucktown, to 58 in 2020 from 28 the year before.
+</p>
+
+<p>
+  The Tribune reported in October that the <a href="https://www.chicagotribune.com/news/criminal-justice/ct-chicago-police-carjacking-data-20201014-yvx2sxu3tfhgrlvdomeaq26hxi-story.html" target="new">2020 surge in carjackings</a> was already double that of 2019.
+</p>
+
+<p>
+  On Friday, about 20 concerned citizens gathered in the South Side’s Calumet Heights community to hand out flyers door to door, information telling citizens how to prevent being a victim of a carjacking and other crime.
+</p>
+
+<div class="pullquote">
+  <p>
+      <q>I’ve been attacked before. I’ve been able to protect myself. Keep your head on a swivel is basically it... Be aware of what’s going on. Sometimes if these young guys that are planning on coming at you, the best weapon they’ve got is the element of surprise. So if we can take that away ... sometimes that will stop (them).</q>
+     <br><p><em>Jerry Brown, Calumet Heights resident</em>
+     </p>
+</div>
+
+<div class="flourish-embed flourish-chart" data-src="visualisation/5300511" id="dataviz" style="float: right; width: 500px;"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+<p>
+  Jerry Brown, an area resident who organized the event, said he drives the type of vehicle that could attract criminal attention.
+</p>
+
+<p>
+  <q>I’ve been attacked before. I’ve been able to protect myself,</q> said Brown, 66. <q>Keep your head on a swivel is basically it... Be aware of what’s going on. Sometimes if these young guys that are planning on coming at you, the best weapon they’ve got is the element of surprise. So if we can take that away ... sometimes that will stop (them).</q>
+</p>
+
+
+<p>
+  Brown said he has his own thoughts on the reasons for the 2020 carjacking spike.
+</p>
+
+<p>
+  <q>The lack of opportunity for some kids, lack of resources for some kids, you know, financial, you know, and then sometimes it’s just out-and-out evil,</q> he said.
+</p>
+
+<p>
+  Other residents at the march agreed with Brown’s tips, saying making sure to be aware of one’s surroundings is the key.
+</p>
+
+<p>
+  In her walk through the community on Friday, Ald. Michelle Harris, whose 8th Ward covers Calumet Heights, said her constituents have asked for more police resources in the area to thwart carjackers.
+</p>
+
+<p>
+  In a Tribune interview, Murphy, the captain from the Chicago police’s South Chicago District, which covers Calumet Heights, also offered some safety tips for motorists to prevent becoming the next carjacking victim.
+</p>
+
+<h2 style="text-align: left;"><em>Read related stories from the Chicago Tribune:</em></h2>
+
+<p>
+    <div id="accords">
+<div id="accordion">
+  <h3 style="background-color: #401F68; color: #FFFFFF;">1 arrested after shot fired at Oak Forest police officer following carjacking, officials say</h3>
+  <div>
+    <p>
+      One person was taken into custody by Chicago police after firing a gun at a suburban police officer Friday evening, officials said.
+      <br>
+      About 5:20 p.m., someone called 911 to report an aggravated carjacking in Orland Park, according to a statement from Oak Forest police. Soon after, Oak Forest police officers tried to pull over what they believed to be the stolen vehicle near 151st Street and Central Avenue. The driver fled south on Central, triggering a police pursuit until the stolen vehicle crashed near 112th Street and Hamlet Avenue in Chicago, police said.
+    <br><br><a href="https://www.chicagotribune.com/news/breaking/ct-oak-forest-police-shot-fired-carjacking-chicago-arrest-20210213-wpwxux5lcjcrzni7crnqz64oai-story.html" target="new">Click here to read more</a>
+  </div>
+  <h3 style="background-color: #401F68; color: #FFFFFF;">18-year-old man faces murder, carjacking charges after 3-hour crime spree on Northwest Side and Elmwood Park, police say</h3>
+  <div>
+    <p>
+    An 18-year-old man was arrested early Wednesday after Chicago police say he was seen getting into a vehicle that was taken during a carjacking, and police also believe the man was connected to a three-hour crime spree that included a homicide, a carjacking and three Dunkin’ holdups that took place Tuesday morning in Chicago and Elmwood Park.
+   <br><br><a href="https://www.chicagotribune.com/news/breaking/ct-18-year-old-murder-carjacking-charges-20210212-xafpjwl22nda7grtliu3m7d2tu-story.html" target="new">Click here to read more</a>
+
+    </p>
+  </div>
+  <h3 style="background-color: #401F68; color: #FFFFFF;">Spike in Chicago carjackings mostly due to joyriding young people, police say
+</h3>
+  <div>
+    <p>
+      The recent “ridiculous spike” in carjackings across Chicago is due largely to young people taking cars around the city to joyride in the vehicles then dump them, a police official told aldermen Friday.
+      <br><br>
+      With members of the City Council Public Safety Committee describing residents in neighborhoods across Chicago as fearful of being carjacked while running daylight errands, Police Department brass pledged to crack down on the ongoing spree.
+  <br><br><a href="https://www.chicagotribune.com/politics/ct-chicago-police-carjackings-hearing-20210122-hgjree6tnnbl7ifr4tcmx3v5ai-story.html" target="new">Click here to read more</a>
+  </div>
+
+</article>
+
+<footer>
+Copyright © MEDILL NEWS 847
+</footer>
+
+
+</div>
+</body>
+
+
+</html>

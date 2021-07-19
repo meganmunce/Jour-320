@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Medill, Journalism, Interactive Storytelling, Megan Munce, Northwestern University Journalism 320">
+    <meta name="description" content="Medill Journalism 320 jQuery Homework">
+    <meta name="author" content="Megan Munce">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>jQuery Homework</title>
+
+
+
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+  <script>
+      $( function() {
+    $( "#tabs" ).tabs();
+  } );
+
+  $( function() {
+      $( document ).tooltip({
+        position: {
+          my: "center bottom-20",
+          at: "center top",
+          using: function( position, feedback ) {
+            $( this ).css( position );
+            $( "<div>" )
+              .addClass( "arrow" )
+              .addClass( feedback.vertical )
+              .addClass( feedback.horizontal )
+              .appendTo( this );
+          }
+        }
+      });
+    } );
+</script>
+<style>
+
+body {
+    width:1200px;
+    background-color: #E4E0EE;
+}
+
+header {
+    background-color:#401F68;
+    color:#ffffff;
+    text-align:center;
+    padding:5px;
+}
+
+/* START HORIZONTAL MENU*/
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #B6ACD1;
+    color: #401F68;
+}
+
+li {
+    float: left;
+    font-family: Arial;
+}
+
+li a {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #000000;
+}
+
+/* END HORIZONTAL MENU*/
+/* start vertical menu
+
+nav {
+    line-height:100px;
+    background-color:#E4E0EE;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;
+}
+*/
+article {
+    width:1100px;
+    float:left;
+    padding:10px;
+}
+footer {
+    background-color:#401F68;
+    color:#FFFFFF;
+    clear:both;
+    text-align:center;
+    padding:5px;
+}
+
+
+figure {
+    float: left;
+    margin: 13px;
+    font-size: 11px;
+}
+
+figcaption {
+  width: 285px;
+  font-family: Arial;
+}
+
+
+aside {
+    border: none;
+    float:right;
+    margin-left: 10px;
+    font-size: 15px;
+    text-align: left;
+    margin-right: 0px;
+    padding: 10px;
+    width: 250px;
+    background-color: #401F68;
+    color: #FFFFFF;
+    font-family: Arial;
+}
+
+a {
+  color: #401F68;
+}
+
+aside a {
+  color: #FFFFFF;
+}
+
+h1 {
+  font-family: Arial;
+}
+
+h2 {
+  font-size: 18px;
+  text-align: right;
+  font-family: Arial;
+}
+
+p {
+  font-family: Arial;
+}
+
+#info {
+
+  width:300px;
+  float:left;
+  padding-right: 10px;
+
+}
+
+#accords {
+width: 300px;
+float:right;
+padding-left:10px;
+}
+
+.ui-tooltip, .arrow:after {
+    background-color: #401F68;
+    border: 2px solid #FFFFFF;
+  }
+  .ui-tooltip {
+    padding: 10px 20px;
+    color: #FFFFFF;
+    border-radius: 20px;
+    font: Arial;
+    text-transform: uppercase;
+    box-shadow: 0 0 7px #000000;
+  }
+  .arrow {
+    width: 70px;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: -16px;
+  }
+  .arrow.top {
+    top: -16px;
+    bottom: auto;
+  }
+  .arrow.left {
+    left: 20%;
+  }
+  .arrow:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    width: 25px;
+    height: 25px;
+    box-shadow: 6px 5px 9px -9px #000000;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .arrow.top:after {
+    bottom: -20px;
+    top: auto;
+  }
+
+</style>
+
+</head>
+
+
+<body>
+
+<div id="container">
+
+<header style="background-color:#401F68; color: #FFFFFF;">
+<h1>Medill News 847</h1>
+</header>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<article>
+
+<h1>Nominations pour in for virtual Golden Globes</h1>
+<p><a href="https://apnews.com/article/academy-awards-coronavirus-pandemic-movies-32ce4982dd0aad514291e70d9b6ed4a0" target="new"> Jake Coyle, Associated Press</a><p>
+<strong><em style="font-size:20px;">NEW YORK (AP) — </em></strong>
+
+<p>
+  David Fincher’s vision of a bygone Hollywood “Mank” topped nominations to the 78th Golden Globe Awards on Wednesday with six nods, leading Netflix’s overall domination in a pandemic-marred movie year.
+</p>
+<p>
+    <div id="accords">
+      <h2><strong>Click here for more information about each of the five best picture drama nominees.</strong></h2>
+<div id="accordion">
+  <h3 style="background-color: #401F68; color: #FFFFFF;">Mank</h3>
+  <div>
+    <p>
+  <p><strong>Total nominations: </strong> 6</p>
+  <p><strong>Director: </strong>David Fincher</p>
+  <p><strong>Cast: </strong>Gary Oldman, Amanda Seyfried</p>
+  <p><strong>Plot summary: </strong>1930's Hollywood is reevaluated through the eyes of scathing social critic and alcoholic screenwriter Herman K. Mankiewicz as he races to finish the screenplay of Citizen Kane (1941).</p>
+  <p><em><a href="https://www.goldenglobes.com/film/mank" target="new">Source: GoldenGlobes.com</a></p></em>
+    </p>
+  </div>
+  <h3 style="background-color: #401F68; color: #FFFFFF;">The Father</h3>
+  <div>
+    <p><strong>Total nominations: </strong> 4</p>
+    <p><strong>Director: </strong>Florian Zeller</p>
+    <p><strong>Cast: </strong>Olivia Colman, Anthony Hopkins</p>
+    <p><strong>Plot summary: </strong>A man refuses all assistance from his daughter as he ages. As he tries to make sense of his changing circumstances, he begins to doubt his loved ones, his own mind and even the fabric of his reality.</p>
+    <p><em><a href="https://www.goldenglobes.com/film/father" target="new">Source: GoldenGlobes.com</a></p></em>
+  </div>
+  <h3 style="background-color: #401F68; color: #FFFFFF;">Nomadland</h3>
+  <div>
+    <p><strong>Total nominations: </strong> 4</p>
+    <p><strong>Director: </strong>Chloé Zhao</p>
+    <p><strong>Cast: </strong>Frances McDormand, David Strathairn</p>
+    <p><strong>Plot summary: </strong>After losing everything in the Great Recession, a woman embarks on a journey through the American West, living as a van-dwelling modern-day nomad.</p>
+    <p><em><a href="https://www.goldenglobes.com/film/nomadland" target="new">Source: GoldenGlobes.com</a></p></em>
+  </div>
+
+<h3 style="background-color: #401F68; color: #FFFFFF;">Promising Young Woman</h3>
+<div>
+  <p><strong>Total nominations: </strong> 4</p>
+  <p><strong>Director: </strong>Emerald Fennell</p>
+  <p><strong>Cast: </strong>Carey Mulligan, Alison Brie, Max Greenfield</p>
+  <p><strong>Plot summary: </strong>A young woman, traumatized by a tragic event in her past, seeks out vengeance against those who crossed her path.</p>
+  <p><em><a href="https://www.goldenglobes.com/film/promising-young-woman" target="new">Source: GoldenGlobes.com</a></p></em>
+</div>
+
+<h3 style="background-color: #401F68; color: #FFFFFF;">The Trial of the Chicago 7</h3>
+<div>
+  <p><strong>Total nominations: </strong> 5</p>
+  <p><strong>Director: </strong>Aaron Sorkin</p>
+  <p><strong>Cast: </strong> Eddie Redmayne, Sacha Baron Cohen, Mark Rylance, Joseph Gordon-Levitt, Ben Shenkman, Frank Langella, Michael Keaton</p>
+  <p><strong>Plot summary: </strong>The story of 7 people on trial stemming from various charges surrounding the uprising at the 1968 Democratic National Convention in Chicago, Illinois.</p>
+  <p><em><a href="https://www.goldenglobes.com/film/trial-chicago-7" target="new">Source: GoldenGlobes.com</a></p></em>
+</div>
+
+</div>
+</div>
+<p>
+The film about “Citizen Kane” co-writer Herman Mankiewicz, landed nominations for best film, drama; best actor for Gary Oldman; best director for Fincher, best supporting actress for Amanda Seyfried; best score; and best screenplay for Jack Fincher, the director’s father who penned the script before dying in 2003.
+</p>
+<p>
+Aaron Sorkin’s “The Trial of the Chicago 7” — which, like “Mank,” is a Netflix release — came closest with five nominations, including nods for best film, drama; best director and best screenplay for Sorkin; supporting actor for Sacha Baron Cohen; and best song.
+</p>
+<figure>
+  <a href="#" title="Chadwick Boseman passed away in August 2020 from cancer at the age of 43." style="text-decoration: none; color: #000000;">
+<img  src="https://live.staticflickr.com/8735/28018643703_1c3b0f009d_b.jpg" width=" 285px"height="427px" alt="A photo of Chadwick Boseman at the 2016 Comic-Con International in San Diego, Calif.">
+<figcaption> Chadwick Boseman speaks at the 2016 Comic-Con International in San Diego, Calif. The actor, who passed away in August 2020, was posthumously nominated for lead actor in a drama film. <em></a><a href="https://www.flickr.com/photos/22007612@N05/28018643703" target="new">Source: Gage Skidmore </em> </figcaption>
+</a>
+</figure>
+<p>
+The other nominees for best film in the drama category were Chloe Zhao’s “Nomadland,” Emerald Fennell’s “Promising Young Woman” and Florian Zeller’s “The Father.”
+</p>
+<p>
+A year after fielding no female nominees for best director — or best feature film nomination for any movie directed by a woman — the Hollywood Foreign Press nominated more female filmmakers than it had before.
+</p><p>
+Regina King (“One Night in Miami”), Zhao and Fennell were nominated for best director, alongside Sorkin and Fincher.
+</p>
+
+
+<p>
+Netflix, which topped all studios at the Globes last year, too, led with a commanding 42 nominations, with 22 coming in film categories and 20 in television.
+</p><p>
+The nominees for best musical or comedy film are: “Borat Subsequent Moviefilm”; “Hamilton,”; “Music”; “Palm Springs”; “The Prom.”
+</p><p>
+The nominees for best television series, drama, are: “The Crown”; “Lovecraft Country”; “The Mandalorian”; “Ozark”; “Ratched.”</p>
+</p><p>
+The nominees for best television series, musical or comedy, are: “Schitt’s Creek”; “Ted Lasso”; “The Great”; “The Flight Attendant”; “Emily in Paris.”
+</p><p>
+The nominees for best motion picture, foreign language, are: “Another Round”; “La Llorona”; “The Life Ahead”; “Minari”; “Two of Us.”
+</p><p>
+The nominees for lead actor in a drama film are: Riz Ahmed, “Sound of Metal”; Chadwick Boseman, “Ma Rainey’s Black Bottom”; Anthony Hopkins, “The Father”; Gary Oldman, “Mank”; Tahar Rahim, “The Mauritanian.”
+</p><p>
+The nominees for actress in a drama film are: Frances McDormand, “Nomadland”; Viola Davis, “Ma Rainey’s Black Bottom”; Carey Mulligan, “Promising Young Woman”; Vanessa Kirby, “Pieces of a Woman”; Andra Day, “The United States vs. Billie Holiday.”
+</p>
+<aside>
+  <h2 style="text-align: center;">Remembering Chadwick Boseman</h2>
+  <a href="#" title="Viola Davis starred alongside Boseman in &ldquo; Ma Rainey’s Black Bottom, for which she was also nominated for best actress in a drama film." style="text-decoration: none; color: #000000;">
+    <q style="color: #FFFFFF;">Every time he came on set it was fiercely, absolutely about the work. He was an artist, Chadwick was. He was an absolute joy.</q>
+    <p style="color: #FFFFFF;"> - Viola Davis</p>
+     <p><em><a href="https://www.latimes.com/entertainment-arts/movies/story/2021-02-03/chadwick-boseman-posthumous-golden-globe-nomination" target="new">Source: the Los Angeles Times</a></em></p>
+   </a>
+</aside>
+<p>
+The nominees for lead actor in a comedy or musical film are: Sacha Baron Cohen, “Borat Subsequent Moviefilm”; James Corden, “The Prom”; Andy Samberg, “Palm Springs”; ”Lin-Manuel Miranda, “Hamilton”; Dev Patel, “The Personal History of David Copperfield.”
+</p><p>
+The nominees for lead actress in a comedy or musical film are: Maria Bakalova, “Borat Subsequent Moviefilm”; Michelle Pfeiffer, “French Exit”; Anya Taylor-Joy, “Emma”; Kate Hudson, “Music”; Rosamund Pike, “I Care A Lot.”
+</p><p>
+Sarah Jessica Parker and Taraji P. Henson hosted the nominations announcement Wednesday morning.
+</p>
+<p>
+The Globes are typically the first major show of Hollywood’s awards season, which ends with the crowning of the best picture winner at the Oscars. They’ll retain that distinction, despite being delayed nearly two months, after a surge in virus cases in recent months pushed the Grammy Awards to March.
+</p><p>
+Hollywood’s <a href="https://apnews.com/article/academy-awards-coronavirus-pandemic-movies-32ce4982dd0aad514291e70d9b6ed4a0" target="new">strange and largely virtual awards season</a> lacks the usual kind of buzz and red-carpet glamour that the Hollywood Foreign Press Association annually feasts on. More than perhaps any other award show, the Globes depend on a cavalcade of stars — something that won’t materialize when the awards are handed out Feb. 28 in a ceremony hosted by Tina Fey and Amy Poehler.
+</p>
+
+</article>
+
+<footer>
+Copyright © MEDILL NEWS 847
+</footer>
+
+
+</div>
+</body>
+
+
+</html>
